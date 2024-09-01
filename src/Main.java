@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Значение переменной b с типом byte равно " + b );
         short c = -3748;
         System.out.println("Значение переменной c с типом short равно " + c);
-        long d = 1234567890;
+        long d = 1234567890L;
         System.out.println("Значение переменной d с типом long равно " + d);
         float i = 45.23f;
         System.out.println("Значение переменной i с типом float равно " + i);
@@ -16,8 +16,7 @@ public class Main {
  // задача 2
        float catOne = 27.12f;
        System.out.println(catOne);
-       long catTwo = 987678965; // не дает вписать число из задания до конца, хотя по типу относится именно к long
-       System.out.println(catTwo);
+       long catTwo = 987678965549L;
        double dogOne = 2.786;
        System.out.println(dogOne);
        short  dogTwo = 569;
@@ -29,14 +28,14 @@ public class Main {
        byte frog = 67;
        System.out.println(frog);
        // задача 3
-        byte oneClass = 23;
-        int twoClass = 27;
-        short threeClass = 30;
+        byte firstClass = 23;
+        int secondClass = 27;
+        short thirdClass = 30;
         short paper = 480;
-        int paperClass = paper / ( oneClass + twoClass + threeClass);
-        System.out.println("На каждого ученика рассчитано " + paperClass + " листов бумаги");
+        int printingPaper = paper / ( firstClass + secondClass + thirdClass);
+        System.out.println("На каждого ученика рассчитано " + printingPaper + " листов бумаги");
         // задача 4
-        short detailMinute = 16/2;
+        short detailMinute = 8;
         int detailTwenty =  20 * detailMinute;
         System.out.println("За двадцать минут машина произвела " + detailTwenty + " штук бутылок" );
         byte day = 24;
